@@ -42,10 +42,82 @@ Eventually after this, Javascript combines the both DOM and CSSOM to construct R
 
 Render engine creates the layout according to the size issued through the css. The layout consists of size of each node where it will be printed on screen, and according to the render tree it paints the each pixel.
 
+<br>
+<br>
+<br>
 
 
+# Mechanism behind Browser Rendering
+
+![This is an image](https://weareadaptive.com/wp-content/uploads/2020/04/critical-rendering-path.jpg)
+
+The basic rendering flow has four steps namely,
+
+- **Parsing** <br>
+- **Render Tree** <br>
+- **Layout** <br>
+- **Paint**
+
+## 1. Parsing
+
+We can define parsing as translating a document into a structure that code can use. In simpler words splitting the complex task into individuals and focussing on each one. Parsing consists of grammar such as Vocabulary and Synatx rules and the other steps involved are as follows,
+
+#### Lexical Analysis <br>
+#### Syntax Analysis
+#### Lexer (Tokenizer) - Create Tokens
+#### Parser - Apply the syntax rules
+
+Parsing is of two types Unconventional Parsing and Conventional Parsing.
+
+### Conventional parsing :
+
+Firstly the information that Render engine gets will be onverted into tokens by the 'Lexer'. 'Parser' constantly requests tokens from the 'Lexer', eventually lexer send the data in the form of tokens. Parser always try to use the tokens based on the syntax rules but if its not possible it stores the tokens and tries to find if the token can be matched to something.
+
+The readily available parsers are :<br>
+- Flex
+- Lex
+- Yacc
+- Bison
+
+Webkit uses Flex(Lexer) and Bison(Parser)
+
+This kind of parsing is used for parsing CSS and Javascript.
+
+### Unconventional Parsing :
+using this we can parse HTML. We can't use conventional parsing for HTML because of the following reasons,
+- HTML is not contex free grammar
+- HTML Document Type Definition(DTD) w3c
+
+To put it straight the browser recovers from the errors in the code if it encounters any. As like in the conventional model here too the process happens and render tree will be constructed. 
+
+## 2. Render Tree
+
+- Render tree is generated while DOM tree is being constructed.
+- Render tree is a visual elements in the order which they need to get displayed.
+- Elements in the render tree are called renderers or renderer objects.
+- Render object is a rectangle.
+
+Based on the definiton of DOM element it can be displayed as :
+- Render none
+- Render inline
+- Render block
+- Render inline-block
+- Renderlist-item
+
+## 3. Layout :
+From the render tree the amount of space and geometry is calculated and assigned to their respective positions if the form of rectangles. Most of the time layout happens in one go
+
+## 4. Paint :
+The blocks of rectangles which has been constructed from the render tree is being colored by the paint() method and displays content on the page. 
+The order of painting is :
+- Background Color
+- Background Image
+- Border 
+- children
+- Outline
 
 
+This is how the browser renders HTML, CSS, JS and displays the web pages.
 
 
 
