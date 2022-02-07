@@ -1,6 +1,6 @@
 # Browser Rendering
 
-Here, we are going to discuss how the browser renders HTML, CSS, JavaScript to DOM. 
+Here, we are going to discuss how the browser renders HTML, CSS and JavaScript to DOM. 
 
 ![This is an image](https://blog.logrocket.com/wp-content/uploads/2021/06/how-browser-rendering-works.png)
 
@@ -14,7 +14,7 @@ Let's get started.
 Without wasting much time let's deep dive into the discussion.
 
 
-Whenever we search something, the browser gets the data from the servers and interprets and represents the info in the form of web pages. Behind the scene there are so many processes that undergo like,<br>
+Whenever we search something, the browser gets the data from the servers, interprets and represents it in the form of web pages. Behind the scene there are so many processes that undergo like,<br>
 
 ##### 1. Requesting Servers to provide information by browser engines.<br>
 ##### 2. Browser engine sends the information to the rendering engine.<br>
@@ -30,7 +30,7 @@ Rendering engine gets the data in the form of ***HTML***, ***CSS***, ***PNG***, 
 
 ### Creating CSS
 
-Then the case is with CSS, where the browser cretaes CSSOM-Cascading Style Sheet Object Model just like HTML DOM.<br>
+Then the case is with CSS, where the browser cretaes CSSOM-Cascading Style Sheet Object Model, just like HTML DOM.<br>
 ![This is an image](https://api.programmingsoup.com/images/CSSOM.png)
 
 ### Creating Render Tree by Javascript
@@ -118,14 +118,3 @@ The order of painting is :
 
 
 This is how the browser renders HTML, CSS, JS and displays the web pages.
-
-
-
-
-
-
-
-
-
-
-
