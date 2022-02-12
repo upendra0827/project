@@ -122,4 +122,5 @@ This is how the browser renders HTML, CSS, JS and displays the web pages.
 ## References :
 * [Youtube](https://www.youtube.com/watch?v=0IsQqJ7pwhw&t=5s)
 * [Google](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+* [Google](https://medium.com/jspoint/how-the-browser-renders-a-web-page-dom-cssom-and-rendering-df10531c9969#:~:text=When%20a%20web%20page%20is,the%20Render%2DTree%20from%20it.)
 
