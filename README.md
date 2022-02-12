@@ -118,3 +118,8 @@ The order of painting is :
 
 
 This is how the browser renders HTML, CSS, JS and displays the web pages.
+
+## References :
+* [Youtube](https://www.youtube.com/watch?v=0IsQqJ7pwhw&t=5s)
+* [Google](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+
